@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: #000000">
+
+        <!--Camera-->
+        <a-entity position="0 0 15">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <a-sky src = "https://cdn.glitch.com/850dd813-e5e9-4dd0-9751-38981ae74172%2Fvia_lactea.png?v=1604296331712"></a-sky>
+
+        <!--Sun-->
+        <a-entity>
+            <a-sphere position="0 0 0" radius="3" 
+            src = "https://cdn.glitch.com/850dd813-e5e9-4dd0-9751-38981ae74172%2Fsol.jpg?v=1604296185621"
+            ></a-sphere>
+        </a-entity>
+
+        <!--Mercury-->
+        <a-entity position="0 0 0" rotation="0 0 0"
+            animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 17000">
+            <a-sphere position="1  0 -5" radius="0.2"
+            src="https://cdn.glitch.com/850dd813-e5e9-4dd0-9751-38981ae74172%2Fmercurio.jpg?v=1604298142259"
+            animation = "property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 18000"
+            ></a-sphere>  
+        </a-entity>
+         <!--Venus-->
+         <a-entity position="0 0 0" rotation="0 0 0"
+         animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 18500">
+         <a-sphere position="6  0 -5" radius="0.3" src = "venus.jfif"
+         animation = "property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 18000"
+         ></a-sphere>  
+        </a-entity>
+         <!--Earth-->
+         <a-entity position="0 0 0" rotation="0 0 0"
+         animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 18000">
+         <a-sphere position="10.5 0 0" radius="0.5"
+         src = "https://cdn.glitch.com/850dd813-e5e9-4dd0-9751-38981ae74172%2Fearth.jpg?v=1604312404511"
+         animation = "property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 18000"
+         >
+         <a-entity position="0 0 0" rotation="0 0 0"
+         animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 18000">
+         <a-sphere position="1 0 0" radius="0.2"
+         src = "moon.jpg"
+         animation = "property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 18000"
+         ></a-sphere>  
+     </a-entity>
+        </a-sphere>  
+     </a-entity>
+         <!--Mars-->
+         <a-entity position="0 0 0" rotation="0 0 0"
+         animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 19500">
+         <a-sphere position="14.5  0 0" radius="0.4" color="#9F5940" src = "mars.jpg"
+         animation = "property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 18000"
+         ></a-sphere>  
+     </a-entity> 
+         <!--Jupiter-->
+         <a-entity position="0 0 0" rotation="0 0 0"
+         animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 18550">
+         <a-sphere position="21  0 -5" radius="1.2" color="#D58A93" src = "jupiter.jpg"
+         animation = "property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 18000"
+         ></a-sphere>  
+     </a-entity>
+      <!--Saturn-->
+      <a-entity position="0 0 0" rotation="0 0 0"
+      animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 19500">
+      <a-sphere position="26  0 -5" radius="0.9" color="#E2BF77" src = "saturn.jpg"
+      animation = "property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 18000"
+      >
+      <a-entity position = "0 0 0" rotation = "45 45 0"> 
+      <a-torus color = "brown" radius = "3" arc = "360" radius-tubular = "0.01" segments-tubular = "1000"
+      rotation = "90 45 45" 
+      ></a-torus>
+      <a-torus color = "yellow" radius = "2.5" arc = "360" radius-tubular = "0.01" segments-tubular = "1000"
+      rotation = "90 45 45" 
+      ></a-torus>
+      <a-torus color = "orange" radius = "2" arc = "360" radius-tubular = "0.01" segments-tubular = "1000"
+      rotation = "90 45 45" 
+      ></a-torus>
+      <a-torus color = "red" radius = "1.5" arc = "360" radius-tubular = "0.01" segments-tubular = "1000"
+      rotation = "90 45 45" 
+      ></a-torus>
+    </a-entity>
+    </a-sphere>  
+  </a-entity>
+        <!--Uranus-->
+        <a-entity position="0 0 0" rotation="0 0 0"
+            animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 20700">
+            <a-sphere position="31  0 -5" radius="0.5" color="#C3E8EB" src = "uranus1.jfif"
+            animation = "property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 18000"
+            >
+            <a-entity position = "0 0 0" rotation = "90 45 0"> 
+                <a-torus color = "white" radius = "1.6" arc = "360" radius-tubular = "0.01" segments-tubular = "1000"
+                rotation = "90 45 45" 
+                ></a-torus>
+            </a-entity>
+        </a-sphere>  
+        </a-entity>
+         <!--Neptune-->
+         <a-entity position="0 0 0" rotation="0 0 0"
+         animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 21000">
+         <a-sphere position="36  0 -5" radius="0.5" color="#416BFF" src = "neptune.jfif"
+         animation = "property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 18000"
+         ></a-sphere>  
+     </a-entity>
+
+     <!--Mercury-->
+     <a-torus color = "grey" radius = "5" arc = "360" radius-tubular = "0.01" segments-tubular = "1000"
+     rotation = "90 0 0" 
+     ></a-torus>
+
+        <!--Venus-->
+     <a-torus color = "grey" radius = "7.8" arc = "360" radius-tubular = "0.01" segments-tubular = "1000"
+     rotation = "90 0 0" 
+     ></a-torus>
+
+     <!--earth-->
+     <a-torus color = "grey" radius = "10.6" arc = "360" radius-tubular = "0.01" segments-tubular = "1000"
+     rotation = "90 0 0" 
+     ></a-torus>
+
+     <!--Mars-->
+     <a-torus color = "grey" radius = "14.5" arc = "360" radius-tubular = "0.01" segments-tubular = "1000"
+     rotation = "90 0 0" 
+     ></a-torus>
+
+     <!--Jupiter-->
+     <a-torus color = "grey" radius = "21.5" arc = "360" radius-tubular = "0.01" segments-tubular = "1000"
+     rotation = "90 0 0" 
+     ></a-torus>
+
+     <!--Saturn-->
+     <a-torus color = "grey" radius = "26.5" arc = "360" radius-tubular = "0.01" segments-tubular = "1000"
+     rotation = "90 0 0" 
+     ></a-torus>
+
+     <!--Uranus-->
+     <a-torus color = "grey" radius = "31.5" arc = "360" radius-tubular = "0.01" segments-tubular = "1000"
+     rotation = "90 0 0" 
+     ></a-torus>
+
+     <!--Neptune-->
+     <a-torus color = "white" radius = "36.5" arc = "360" radius-tubular = "0.01" segments-tubular = "1000"
+     rotation = "90 0 0" 
+     ></a-torus>
+    </a-scene>
+</body>
+
+</html>
